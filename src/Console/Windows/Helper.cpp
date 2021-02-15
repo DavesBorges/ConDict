@@ -4,6 +4,9 @@
 // for posterior restoring in the
 // restore_environment function
 
+int chcp_input;
+int chcp_output;
+
 void setup_unicode(){
 	chcp_input = GetConsoleCP();
 	chcp_output = GetConsoleOutputCP();
@@ -23,6 +26,10 @@ void restore_environment(){
 void stdin_mode(){
 	
 	
+}
+
+void commandline_arguments_mode()
+{
 }
 
 void readIntoDictionary(){

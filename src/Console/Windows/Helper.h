@@ -1,12 +1,13 @@
 #include <Windows.h>
 #include <map>
 #include <string>
+#include <vector>
 
-std::map<std::string, <std::vector<std::wstring>> dictionary;
+extern std::map<std::string, std::vector<std::wstring>> dictionary;
 
 
-int chcp_input;
-int chcp_output;
+extern int chcp_input;
+extern int chcp_output;
 
 
 // Prepare the environment for dealing with unicode characters
