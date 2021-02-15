@@ -1,26 +1,15 @@
 #include <Windows.h>
 #include <iostream>
-#include "Helper.h"
+#include "Console/Windows/Helper.h"
 
+#ifdef WIN32
+int wmain(int argc, wchar_t* argv[])
 
-#ifdef WINDOWS
-	#define win w
 #else
-	#define win 
-#endif
+int main(int argc, char* argv[])
+#endif // WIN32	
+{
 
-int winmain(int argc, wchar* argv[]){
-	
-	setup_unicode();
-	
-	if(argc == 1){
-		stdin_mode();
-	}
-	else{
-		commandline_arguments_mode();
-	}
-
-	restore_environment();
 }
 
 	
